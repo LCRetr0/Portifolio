@@ -1,0 +1,18 @@
+.eu{
+  position: fixed;           
+    top: 45%;                  
+    left: 50%;           
+  transform: translate(-50%, -50%);
+    width: 300px;              
+    height: 300px;
+    background-image: url(eu.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.7);
+    z-index: 11;              
+}
+.eu:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 5px 50px rgba(255,255,255,0.3);
+}

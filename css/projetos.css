@@ -115,3 +115,6 @@ body{
 .blankref{
     color:var(--padrao-textual);
 }
+.btn-voltar{
+    color: var(--padrao-textual);
+}

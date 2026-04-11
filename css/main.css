@@ -53,6 +53,7 @@ body{
 
 }
 .sessao-link{
+    text-decoration: none !important;
     color:var(--padrao-textual);
      font-family: "Lato",sans-serif; 
     font-weight: 700;

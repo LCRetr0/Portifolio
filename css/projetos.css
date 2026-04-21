@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-
 :root{
     --padrao-textual:rgb(255,255,255);
     --padrao-fundo:rgb(0,0,0);
@@ -11,46 +10,44 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
-    
 }
+
 html, body {
-        background-color: var(--padrao-fundo);
-        position:relative;
-   
+    background-color: var(--padrao-fundo);
+    position:relative;
+    height: 100%; 
+    width: 100vw;
+     overflow-x: hidden;
 }
 *::-webkit-scrollbar {
     display: none;  
 }
-html{
 
+html{
     scroll-behavior: smooth;
     background-color: var(--padrao-fundo);
 }
-body{
-    min-height: 100vh;
-    width: 100%;       
-    background-image: url("projetos.jpg");
-     background-size: 100vw 100vh; 
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     background-attachment: scroll; 
-     background-color: var(--padrao-fundo);
-    width: 100%;
-     height: 100%;
-     min-height: 100vh;
-     position:relative;
-     
- 
-}
 
+body{
+    min-height: 120vh;
+    background-size: cover;
+    width: 100vw;      
+    height: 100vh;    
+    background-image: url("projetos.jpg");     
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;       
+    background-color: var(--padrao-fundo);
+    position:relative;
+}
 .projetos-container {
-    min-height: 130vh;
+    min-height: 180vh; 
     position: relative;
     z-index: 1;
 }
+
 .Titulo{
-    position: fixed;
+    position: absolute;
     align-items: center;
     justify-content: center;
     top: 5%;
@@ -62,12 +59,14 @@ body{
     color: var(--padrao-textual);
     pointer-events: none;
 }
+
 .sessao-link{
     color:var(--padrao-textual);
-     font-family: "Lato",sans-serif; 
+    font-family: "Lato",sans-serif; 
     font-weight: 700;
     font-style: normal;
 }
+
 .p1-titulo{
     padding: 35px 30px;
     color: var(--padrao-textual);
@@ -76,11 +75,12 @@ body{
     position: absolute;
     flex-direction: column;
     align-content: stretch;
-    top:10%;
+    top:5%;
     z-index: 3;
 }
+
 .tlou{
-      padding: 35px 30px;
+    padding: 35px 30px;
     color: var(--padrao-textual);
     display:flex;
     width: auto; 
@@ -90,6 +90,7 @@ body{
     top: 15%;
     z-index: 3;
 }
+
 .p2-titulo{
     padding: 35px 30px;
     color: var(--padrao-textual);
@@ -98,9 +99,10 @@ body{
     position: absolute;
     flex-direction: column;
     align-content: stretch;
-    top:43%;
+    top: 40%;
     z-index: 3;
 }
+
 .stockcontrol{
     padding: 35px 30px;
     color: var(--padrao-textual);
@@ -109,12 +111,48 @@ body{
     position: absolute;
     flex-direction: column;
     align-content: stretch;
-    top:50%;
+    top:45%;
     z-index: 5;
 }
+
+/* NOVOS ESTILOS PARA ESPETINHO-SOLEDade */
+
+.p3-titulo{
+    padding: 35px 30px;
+    color: var(--padrao-textual);
+    display:flex;
+    width: auto; 
+    position: absolute;
+    flex-direction: column;
+    align-content: stretch;
+    top:75%; /* Posicionado abaixo do Stock Control */
+    z-index: 3;
+}
+
+.espetinho-soledade{
+    padding: 35px 30px;
+    color: var(--padrao-textual);
+    display:flex;
+    width: auto; 
+    position: absolute;
+    flex-direction: column;
+    align-content: stretch;
+    top:80%; /* Logo abaixo do título p3 */
+    z-index: 5;
+}
+
 .blankref{
     color:var(--padrao-textual);
 }
+
 .btn-voltar{
     color: var(--padrao-textual);
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 0%;
+    left: 80%;
+    top:165%;
+    z-index: 10;
 }

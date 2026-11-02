@@ -1,72 +1,206 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Retr0</title>
-
+    <title>Lucas Silva Cerqueira // Retr0</title>
     <link rel="stylesheet" href="./Css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-<div class="container-imagem-propria">
-  <img src="Css/eu.png" alt="eu" class="imagem-minha">
-</div>
 
     <canvas id="matrix"></canvas>
-<div class="container-imagens-laterais">
 
-  <img src="Css/Watch-Dogs2.jpg" alt="The Last of Us" class="imagem-lateral">
+    <div class="crt-overlay"></div>
 
+    <div class="terminal-container">
+        
+        <header class="terminal-header">
+            <div class="window-controls">
+                <span class="btn-dot close"></span>
+                <span class="btn-dot minimize"></span>
+                <span class="btn-dot maximize"></span>
+            </div>
+            <div class="terminal-title">retr0</div>
+        </header>
 
-  <img src="Css/The-Last-of-Us.png" alt="Espaço para imagem 2" class="imagem-lateral">
+        <nav class="cyber-nav">
+            <a href="#about" class="nav-link active"><i class="fa-solid fa-user-secret"></i> Sobre</a>
+            <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+            <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experiência</a>
+            <a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projetos</a>
+            <a href="#contact" class="nav-link"><i class="fa-solid fa-network-wired"></i> Contato</a>
+        </nav>
 
- 
-  <img src="Css/Lucy.jpg" alt="Espaço para imagem 3" class="imagem-lateral">
-</div>
-    <nav class="Opcoes">
-    <div class="dropdown-contato">
-        <a id="Contato" href="javascript:void(0)" class="sessao-link">Contato</a>
-        <div id="menuContato" class="menu-escondido">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lucassilvacerqueira29@gmail.com" target="_blank">Gmail</a>
-            <a href="https://www.linkedin.com/in/lucas-silva-cerqueira-0b6b55268" target="_blank">LinkedIn</a>
-        </div>
+        <main class="terminal-body">
+            
+            <section class="hero-section">
+                <div class="glitch-wrapper">
+                    <h1 class="glitch" data-text="LUCAS SILVA CERQUEIRA">LUCAS SILVA CERQUEIRA</h1>
+                </div>
+                <div class="subtitle">
+                    <span class="prompt">&gt;</span> ALIAS: <span class="highlight">Retr0</span> //  FULL STACK DEVELOPER
+                </div>
+                <p class="tagline">Construindo automações, APIs robustas e arquiteturas modernas com Java e PHP.</p>
+            </section>
+
+            <hr class="cyber-divider">
+
+            <section id="about" class="section-block">
+                <h2 class="section-title"><span class="prompt"></span> SOBRE_MIM</h2>
+                <div class="about-grid">
+                    <div class="bio-card">
+                        <p>🎓 Estudante de <strong>Ciência da Computação</strong> na UniRuy Wyden (4º Semestre).</p>
+                        <p>💻 Especialista em desenvolvimento Back-End & Full Stack, focado no ecossistema Java (Spring Boot) e PHP/Python.</p>
+                        <p>📍 Resido em Salvador, Bahia, Brasil.</p>
+                        <p>🎮 Apaixonado por cultura pop, games e estética Cyberpunk (Watch Dogs, The Last of Us, Cyberpunk 2077).</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="cyber-divider">
+
+   <section id="skills" class="section-block">
+    <h2 class="section-title"><span class="prompt"></span> STACK_TECNOLÓGICA</h2>
+    <div class="skills-grid">
+        <div class="skill-badge"><i class="fa-brands fa-java"></i> Java 17</div>
+        <div class="skill-badge"><i class="fa-solid fa-leaf"></i> Spring Boot</div>
+        <div class="skill-badge"><i class="fa-brands fa-php"></i> PHP</div>
+        <div class="skill-badge"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</div>
+        <div class="skill-badge"><i class="fa-solid fa-database"></i> PostgreSQL / MySQL</div>
+        <div class="skill-badge"><i class="fa-brands fa-html5"></i> HTML</div>
+        <div class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git / GitHub</div>
+        <div class="skill-badge"><i class="fa-solid fa-chart-bar"></i> Power BI / Automations</div>
     </div>
-        <a href="Projetos.html" class="sessao-link">Projetos</a>
+</section>
 
-        <a href="Conhecimentos.html" class="sessao-link">Conhecimentos</a>
+            <hr class="cyber-divider">
 
-    </nav>
+            <section id="experience" class="section-block">
+                <h2 class="section-title"><span class="prompt">#</span> EXPERIÊNCIA_PROFISSIONAL</h2>
+                <div class="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Estagiário de Engenharia e Implantação de Rede Móvel</h3>
+                            <span class="company">Vivo (Telefônica Brasil)</span>
+                        </div>
+                        <p class="timeline-desc">Desenvolvimento de automações em Python (pandas), relatórios analíticos, engenharia de ocorrências de campo para projetos 4G/5G, geração de relatórios mensais e dashboards em Power BI.</p>
+                    </div>
 
- 
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Setor Administrativo & Automação de Processos</h3>
+                            <span class="company">Marinha do Brasil</span>
+                        </div>
+                        <p class="timeline-desc">Gestão de fluxos administrativos e busca constante por automações de rotinas internas para otimização de processos e eficiência operacional.</p>
+                    </div>
 
-    <section class="descricao">
-    <div class="card-descricao card-nome">
-    <h2>Lucas Silva Cerqueira</h2>
+                </div>
+            </section>
+
+            <hr class="cyber-divider">
+
+            <section id="projects" class="section-block">
+                <h2 class="section-title"><span class="prompt"></span> PROJETOS_DESTAQUE</h2>
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>HitBox</h3>
+                            <span class="tech-tag">PHP / PostgreSQL</span>
+                        </div>
+                        <p>Blog de notícias sobre games e cultura pop com backend em PHP, banco PostgreSQL, autenticação personalizada, rate-limiting e interface responsiva.</p>
+                        <a href="https://github.com/LCRetr0" target="_blank" class="btn-code"><i class="fa-brands fa-github"></i> Código Repositório</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>LibraryBoxTellers (LitBox)</h3>
+                            <span class="tech-tag">Java 17 / Spring Boot</span>
+                        </div>
+                        <p>Plataforma para amantes de literatura inspirada no Letterboxd. REST API robusta desenvolvida em Java 17, Spring Data JPA, DTOs e consumo de APIs externas.</p>
+                        <a href="https://github.com/LCRetr0/LibraryBoxTellers" target="_blank" class="btn-code"><i class="fa-brands fa-github"></i> Código Repositório</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>GUTATTO</h3>
+                            <span class="tech-tag">Java / Spring Boot / Docker</span>
+                        </div>
+                        <p>Sistema completo de agendamento e gerenciamento para estúdio de tatuagem. Conta com Spring Security, PostgreSQL, integração com Cloudinary API e Thymeleaf.</p>
+                        <a href="https://github.com/LCRetr0/GustavoTATTOO" target="_blank" class="btn-code"><i class="fa-brands fa-github"></i> Código Repositório</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Prata Imports</h3>
+                            <span class="tech-tag">Full-Stack / JS / REST</span>
+                        </div>
+                        <p>E-commerce completo de moda com interface dinâmica, consumo de APIs de imagens de produtos e carrinho de compras via LocalStorage.</p>
+                        <a href="https://github.com/LCRetr0" target="_blank" class="btn-code"><i class="fa-brands fa-github"></i> Código Repositório</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>MenuCerto</h3>
+                            <span class="tech-tag">Spring Boot / Jackson API</span>
+                        </div>
+                        <p>Assistente de consulta e conversão de dados nutricionais consumindo a API internacional Open Food Facts via conversão JSON estruturada.</p>
+                        <a href="https://github.com/LCRetr0/Menu_Certo" target="_blank" class="btn-code"><i class="fa-brands fa-github"></i> Código Repositório</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Enciclopédia / Validador</h3>
+                            <span class="tech-tag">Java / MySQL / Web</span>
+                        </div>
+                        <p>Sistemas utilitários para validação de produtos e datas de validade integrando bancos de dados MySQL e documentações web estilizadas.</p>
+                        <a href="https://github.com/LCRetr0" target="_blank" class="btn-code"><i class="fa-brands fa-github"></i> Código Repositório</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="cyber-divider">
+
+            <section id="contact" class="section-block">
+                <h2 class="section-title"><span class="prompt"></span> CANAIS_DE_CONEXAO</h2>
+                <div class="contact-links-grid">
+                    <a href="mailto:lucassilvacerqueira29@gmail.com" class="contact-btn">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email Direct</span>
+                        <small>lucassilvacerqueira29@gmail.com</small>
+                    </a>
+                    <a href="https://github.com/LCRetr0" target="_blank" class="contact-btn">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                        <small>github.com/LCRetr0</small>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-silva-cerqueira-0b6b55268" target="_blank" class="contact-btn">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                        <small>lucas-silva-cerqueira</small>
+                    </a>
+                    <a href="https://instagram.com/lcretr0" target="_blank" class="contact-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                        <small>@lcretr0</small>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="terminal-footer">
+            <p>SYSTEM STATUS: <span class="status-online">ONLINE</span> // DEVELOPED BY LUCAS SILVA CERQUEIRA (RETR0)</p>
+        </footer>
     </div>
-     <div class="card-descricao">
 
-     <h3>Quem sou Eu?</h3>
-
-     <p>Sou estudante de Ciência da Computação na Faculdade Uniruy Wyden;</p>
-      <p>Também sou estudante de desenvolvimento back-end em PHP e Java, ambos na Alura;</p>
-      <p>Sou programador com foco em desenvolvimento full-stack e atualmente estou no meu segundo ano de Ciência da Computação, mas gosto de qualquer coisa relacionada a programação.</p>
-      <p>Atualmente trabalho na Vivo como estagiário, fazendo automações com Py.</p>
-      <p>Adoro Watch Dogs, The Last of Us e CyberPunk!</p>
-
-     </div>
-
-    </section>
-
- 
-
-<script src="Js\scriptmatrix.js"></script>
-<script src="Js\scriptindex.js"></script>
+    <script src="scriptindex.js"></script>
 </body>
-
 </html>
